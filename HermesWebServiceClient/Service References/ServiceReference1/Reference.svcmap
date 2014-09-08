@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2f376f4a-2f07-4d73-acc4-2d09701ee790" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://196.29.140.173/webapps/api/Hermes_Api.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Hermes_Api.wsdl" MetadataType="Wsdl" ID="8dd1f0c6-2236-4ba7-b864-172de7b10251" SourceId="1" SourceUrl="http://196.29.140.173/webapps/api/Hermes_Api.svc?wsdl" />
+    <MetadataFile FileName="Hermes_Api.xsd" MetadataType="Schema" ID="c1f453a9-690a-4dd9-accc-297bd078efa9" SourceId="1" SourceUrl="http://196.29.140.173/webapps/api/Hermes_Api.svc?xsd=xsd0" />
+    <MetadataFile FileName="Hermes_Api1.xsd" MetadataType="Schema" ID="e792469c-96ee-4649-9c38-4306e7792460" SourceId="1" SourceUrl="http://196.29.140.173/webapps/api/Hermes_Api.svc?xsd=xsd1" />
+    <MetadataFile FileName="Hermes_Api2.xsd" MetadataType="Schema" ID="aa84e2d5-6a21-4126-b895-494296ed204d" SourceId="1" SourceUrl="http://196.29.140.173/webapps/api/Hermes_Api.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

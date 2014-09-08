@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/khemo.tabitelephony.webservice.api.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/khemo.tabitelephony.webservice.api.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="LoginRequestMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoginRequestMessage" nillable="true" type="tns:LoginRequestMessage" />
+  <xs:complexType name="LoginResponseMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sid" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoginResponseMessage" nillable="true" type="tns:LoginResponseMessage" />
+  <xs:complexType name="LogoutRequestMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="sid" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LogoutRequestMessage" nillable="true" type="tns:LogoutRequestMessage" />
+  <xs:complexType name="LogoutResponseMessage">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="LogoutResponseMessage" nillable="true" type="tns:LogoutResponseMessage" />
+  <xs:complexType name="GetAgentInfoRequestMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="agentid" type="xs:int" />
+      <xs:element minOccurs="0" name="endDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="sid" type="xs:int" />
+      <xs:element minOccurs="0" name="startDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetAgentInfoRequestMessage" nillable="true" type="tns:GetAgentInfoRequestMessage" />
+  <xs:complexType name="GetAgentInfoResponseMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="agentInfo" nillable="true" type="tns:AgentInfoDataContract" />
+      <xs:element minOccurs="0" name="calls" nillable="true" type="tns:ArrayOfCallInfoDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetAgentInfoResponseMessage" nillable="true" type="tns:GetAgentInfoResponseMessage" />
+  <xs:complexType name="AgentInfoDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="agentId" type="xs:int" />
+      <xs:element minOccurs="0" name="calls" nillable="true" type="tns:ArrayOfCallInfoDataContract" />
+      <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AgentInfoDataContract" nillable="true" type="tns:AgentInfoDataContract" />
+  <xs:complexType name="ArrayOfCallInfoDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CallInfoDataContract" nillable="true" type="tns:CallInfoDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCallInfoDataContract" nillable="true" type="tns:ArrayOfCallInfoDataContract" />
+  <xs:complexType name="CallInfoDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ani" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="calldate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="callid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="campaign" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="comments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="customerid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dnis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="duration" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="endreason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="memo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="queue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statuscode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statusdetail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statusgroup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="statustext" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CallInfoDataContract" nillable="true" type="tns:CallInfoDataContract" />
+  <xs:complexType name="ListAgentsRequestMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="endDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="sid" type="xs:int" />
+      <xs:element minOccurs="0" name="startDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListAgentsRequestMessage" nillable="true" type="tns:ListAgentsRequestMessage" />
+  <xs:complexType name="ListAgentsResponseMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="agentInfos" nillable="true" type="tns:ArrayOfAgentInfoDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListAgentsResponseMessage" nillable="true" type="tns:ListAgentsResponseMessage" />
+  <xs:complexType name="ArrayOfAgentInfoDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AgentInfoDataContract" nillable="true" type="tns:AgentInfoDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAgentInfoDataContract" nillable="true" type="tns:ArrayOfAgentInfoDataContract" />
+  <xs:complexType name="GetMyInfoRequestMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="endDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="sid" type="xs:int" />
+      <xs:element minOccurs="0" name="startDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetMyInfoRequestMessage" nillable="true" type="tns:GetMyInfoRequestMessage" />
+  <xs:complexType name="GetMyInfoResponseMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="agentInfo" nillable="true" type="tns:AgentInfoDataContract" />
+      <xs:element minOccurs="0" name="calls" nillable="true" type="tns:ArrayOfCallInfoDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetMyInfoResponseMessage" nillable="true" type="tns:GetMyInfoResponseMessage" />
+</xs:schema>

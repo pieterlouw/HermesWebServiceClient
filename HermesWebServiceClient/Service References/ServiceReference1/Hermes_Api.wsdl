@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="Hermes_Api" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://196.29.140.173/webapps/api/Hermes_Api.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://196.29.140.173/webapps/api/Hermes_Api.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://196.29.140.173/webapps/api/Hermes_Api.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/khemo.tabitelephony.webservice.api.DataContracts" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IHermes_Api_login_InputMessage">
+    <wsdl:part name="parameters" element="tns:login" />
+  </wsdl:message>
+  <wsdl:message name="IHermes_Api_login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:loginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHermes_Api_logout_InputMessage">
+    <wsdl:part name="parameters" element="tns:logout" />
+  </wsdl:message>
+  <wsdl:message name="IHermes_Api_logout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:logoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHermes_Api_getAgentInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAgentInfo" />
+  </wsdl:message>
+  <wsdl:message name="IHermes_Api_getAgentInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAgentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHermes_Api_listAgents_InputMessage">
+    <wsdl:part name="parameters" element="tns:listAgents" />
+  </wsdl:message>
+  <wsdl:message name="IHermes_Api_listAgents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listAgentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHermes_Api_getMyInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMyInfo" />
+  </wsdl:message>
+  <wsdl:message name="IHermes_Api_getMyInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMyInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IHermes_Api">
+    <wsdl:operation name="login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHermes_Api/login" message="tns:IHermes_Api_login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHermes_Api/loginResponse" message="tns:IHermes_Api_login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="logout">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHermes_Api/logout" message="tns:IHermes_Api_logout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHermes_Api/logoutResponse" message="tns:IHermes_Api_logout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAgentInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHermes_Api/getAgentInfo" message="tns:IHermes_Api_getAgentInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHermes_Api/getAgentInfoResponse" message="tns:IHermes_Api_getAgentInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listAgents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHermes_Api/listAgents" message="tns:IHermes_Api_listAgents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHermes_Api/listAgentsResponse" message="tns:IHermes_Api_listAgents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMyInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHermes_Api/getMyInfo" message="tns:IHermes_Api_getMyInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHermes_Api/getMyInfoResponse" message="tns:IHermes_Api_getMyInfo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IHermes_Api" type="tns:IHermes_Api">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="login">
+      <soap:operation soapAction="http://tempuri.org/IHermes_Api/login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="logout">
+      <soap:operation soapAction="http://tempuri.org/IHermes_Api/logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAgentInfo">
+      <soap:operation soapAction="http://tempuri.org/IHermes_Api/getAgentInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listAgents">
+      <soap:operation soapAction="http://tempuri.org/IHermes_Api/listAgents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMyInfo">
+      <soap:operation soapAction="http://tempuri.org/IHermes_Api/getMyInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Hermes_Api">
+    <wsdl:port name="BasicHttpBinding_IHermes_Api" binding="tns:BasicHttpBinding_IHermes_Api">
+      <soap:address location="http://196.29.140.173/webapps/api/Hermes_Api.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

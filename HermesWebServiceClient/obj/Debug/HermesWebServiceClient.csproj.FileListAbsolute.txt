@@ -1,0 +1,10 @@
+H:\personal\learn\WebService\HermesWebService\HermesWebService\bin\Debug\HermesWebServiceClient.exe.config
+H:\personal\learn\WebService\HermesWebService\HermesWebService\obj\Debug\ResolveAssemblyReference.cache
+H:\personal\learn\WebService\HermesWebService\HermesWebService\obj\Debug\HermesWebServiceClient.Form1.resources
+H:\personal\learn\WebService\HermesWebService\HermesWebService\obj\Debug\HermesWebServiceClient.Properties.Resources.resources
+H:\personal\learn\WebService\HermesWebService\HermesWebService\obj\Debug\HermesWebServiceClient.csproj.GenerateResource.Cache
+H:\personal\learn\WebService\HermesWebService\HermesWebService\bin\Debug\HermesWebServiceClient.exe
+H:\personal\learn\WebService\HermesWebService\HermesWebService\bin\Debug\HermesWebServiceClient.pdb
+H:\personal\learn\WebService\HermesWebService\HermesWebService\obj\Debug\HermesWebServiceClient.exe
+H:\personal\learn\WebService\HermesWebService\HermesWebService\obj\Debug\HermesWebServiceClient.pdb
+H:\personal\learn\WebService\HermesWebService\HermesWebService\bin\Debug\LogFileDLL.dll

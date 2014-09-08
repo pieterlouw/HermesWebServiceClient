@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://196.29.140.173/webapps/api/Hermes_Api.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/khemo.tabitelephony.webservice.api.DataContracts" />
+  <xs:element name="login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/khemo.tabitelephony.webservice.api.DataContracts" minOccurs="0" name="request" nillable="true" type="q1:LoginRequestMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="loginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/khemo.tabitelephony.webservice.api.DataContracts" minOccurs="0" name="loginResult" nillable="true" type="q2:LoginResponseMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="logout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/khemo.tabitelephony.webservice.api.DataContracts" minOccurs="0" name="request" nillable="true" type="q3:LogoutRequestMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="logoutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/khemo.tabitelephony.webservice.api.DataContracts" minOccurs="0" name="logoutResult" nillable="true" type="q4:LogoutResponseMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAgentInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/khemo.tabitelephony.webservice.api.DataContracts" minOccurs="0" name="request" nillable="true" type="q5:GetAgentInfoRequestMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAgentInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/khemo.tabitelephony.webservice.api.DataContracts" minOccurs="0" name="getAgentInfoResult" nillable="true" type="q6:GetAgentInfoResponseMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listAgents">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/khemo.tabitelephony.webservice.api.DataContracts" minOccurs="0" name="request" nillable="true" type="q7:ListAgentsRequestMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listAgentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/khemo.tabitelephony.webservice.api.DataContracts" minOccurs="0" name="listAgentsResult" nillable="true" type="q8:ListAgentsResponseMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMyInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/khemo.tabitelephony.webservice.api.DataContracts" minOccurs="0" name="request" nillable="true" type="q9:GetMyInfoRequestMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMyInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/khemo.tabitelephony.webservice.api.DataContracts" minOccurs="0" name="getMyInfoResult" nillable="true" type="q10:GetMyInfoResponseMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

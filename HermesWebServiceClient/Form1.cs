@@ -95,71 +95,104 @@ namespace HermesWebServiceClient
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
+            this.Cursor = Cursors.WaitCursor;
+            AddLog("Timer initiated");
             try
             {
-                main.ListAgents(new DateTime(2014, 9, 5), DateTime.Now);
+                DateTime fromDate = main.getMaxCallDate();
+                if (fromDate != DateTime.MinValue)
+                    main.ListAgents(fromDate, DateTime.Now);
+                else
+                {
+                    AddLog("ERROR: Cannot determine valid from date");
+                    main.ListAgents(new DateTime(2014, 9, 7), DateTime.Now);
+                }
             }
             catch (Exception exc)
             {
                 AddLog(exc.Message);
+            }
+            finally
+            {
+                this.Cursor = Cursors.Default;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.WaitCursor;
+            try
+            {
+                main.Login();
+            }
+            catch (Exception exc)
+            {
+                AddLog(exc.Message);
+            }
+            finally
+            {
+                this.Cursor = Cursors.Default;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.WaitCursor;
+            try
+            {
+                if (endDateVal.Value < fromDateVal.Value)
+                    AddLog("End Date cannot be earlier than Start Date");
+                else
+                    main.ListAgents(fromDateVal.Value, endDateVal.Value);
+            }
+            catch (Exception exc)
+            {
+                AddLog(exc.Message);
+            }
+            finally
+            {
+                this.Cursor = Cursors.Default;
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            int val = int.MinValue;
             try
             {
-
-                /*GetMyInfoRequestMessage infoReq = new GetMyInfoRequestMessage();
-               // = wsClient.getMyInfo(infoReq);
-
-                infoReq.sid = sid;
-                infoReq.startDate = new DateTime(2014, 9, 1);
-                infoReq.endDate = DateTime.Now;
-
-                GetMyInfoResponseMessage info  = wsClient.getMyInfo(infoReq);
-
-                AddLog(String.Format("Agent ID:{0} {1} {2}", info.agentInfo.agentId, info.agentInfo.firstName, info.agentInfo.lastName));
-                foreach (ServiceReference1.CallInfoDataContract call in info.calls)
+                val = int.Parse(txtTimerInterval.Text);
+                if (val > 60 || val < 2)
                 {
-                    AddLog(String.Format("Call :{0}", call.ToString()));
-                }*/
-
+                    val = int.MinValue;
+                }
             }
             catch (Exception exc)
             {
-                AddLog(exc.Message);
+                val = int.MinValue;
+            }
+
+            if (val == int.MinValue)
+            {
+                txtTimerInterval.Text = "";
+                MessageBox.Show("Invalid value for interval", "Invalid value", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                timer1.Stop();
+                timer1.Interval = val * (60 * 1000);
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            try
-            {
+            timer1.Start();
+        }
 
-                /*GetAgentInfoRequestMessage agentInfoReq = new GetAgentInfoRequestMessage();
-
-                agentInfoReq.sid = sid;
-                agentInfoReq.agentid = 1000;
-                agentInfoReq.startDate = new DateTime(2014, 8, 1);
-                agentInfoReq.endDate = DateTime.Now;
-
-                GetAgentInfoResponseMessage info = wsClient.getAgentInfo(agentInfoReq);
-
-                //foreach (AgentInfoDataContract agent in listAgentsRsp.agentInfos)
-                //{
-                AddLog(String.Format("Agent ID:{0} {1} {2}", info.agentInfo.agentId, info.agentInfo.firstName, info.agentInfo.lastName));
-                foreach (ServiceReference1.CallInfoDataContract call in info.calls)
-                {
-                    AddLog(String.Format("Call :{0}", call.ToString()));
-                }*/
-            }
-            catch (Exception exc)
-            {
-                AddLog(exc.Message);
-            }
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            timer1.Stop();
         }
     }
 }

@@ -8,3 +8,12 @@ H:\personal\learn\WebService\HermesWebService\HermesWebService\bin\Release\Herme
 H:\personal\learn\WebService\HermesWebService\HermesWebService\bin\Release\LogFileDLL.dll
 H:\personal\learn\WebService\HermesWebService\HermesWebService\obj\Release\HermesWebServiceClient.exe
 H:\personal\learn\WebService\HermesWebService\HermesWebService\obj\Release\HermesWebServiceClient.pdb
+H:\personal\github\localRepo\HermesWebServiceClient\HermesWebServiceClient\obj\Release\ResolveAssemblyReference.cache
+H:\personal\github\localRepo\HermesWebServiceClient\HermesWebServiceClient\obj\Release\HermesWebServiceClient.Form1.resources
+H:\personal\github\localRepo\HermesWebServiceClient\HermesWebServiceClient\obj\Release\HermesWebServiceClient.Properties.Resources.resources
+H:\personal\github\localRepo\HermesWebServiceClient\HermesWebServiceClient\obj\Release\HermesWebServiceClient.csproj.GenerateResource.Cache
+H:\personal\github\localRepo\HermesWebServiceClient\HermesWebServiceClient\bin\Release\HermesWebServiceClient.exe.config
+H:\personal\github\localRepo\HermesWebServiceClient\HermesWebServiceClient\bin\Release\HermesWebServiceClient.exe
+H:\personal\github\localRepo\HermesWebServiceClient\HermesWebServiceClient\bin\Release\HermesWebServiceClient.pdb
+H:\personal\github\localRepo\HermesWebServiceClient\HermesWebServiceClient\obj\Release\HermesWebServiceClient.exe
+H:\personal\github\localRepo\HermesWebServiceClient\HermesWebServiceClient\obj\Release\HermesWebServiceClient.pdb

@@ -1,0 +1,118 @@
+2014/09/08 20:43:00.0105 | Settings loaded successfully
+2014/09/08 21:13:25.6920 | Settings loaded successfully
+2014/09/08 21:15:00.7654 | Settings loaded successfully
+2014/09/08 21:17:18.4843 | Settings loaded successfully
+2014/09/08 21:17:56.0194 | Settings loaded successfully
+2014/09/08 21:20:01.6166 | Settings loaded successfully
+2014/09/08 21:21:40.1602 | Settings loaded successfully
+2014/09/08 21:21:51.8629 | 1970/01/01 00:00:00
+2014/09/08 21:23:46.5575 | Settings loaded successfully
+2014/09/08 21:23:56.6800 | 0001/01/01 00:00:00
+2014/09/08 21:56:02.0952 | Settings loaded successfully
+2014/09/08 21:56:37.0132 | Settings loaded successfully
+2014/09/08 21:56:38.8863 | Logging in..
+2014/09/08 21:56:49.5199 | Login Successful -  SID: 1361979716
+2014/09/08 21:57:23.6948 | Requesting Data: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 21:57:36.4436 | Data Received: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 21:57:36.4526 | Importing Data: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 21:57:36.6186 | ERROR - Listing Agents: MSG=[Invalid column name 'AgentID'.
+Invalid column name 'Inserted'.] [System.Data.SqlClient.SqlException] [   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at HermesWebServiceClient.Main.doListAgentsThread() in H:\personal\github\localRepo\HermesWebServiceClient\HermesWebServiceClient\Main.cs:line 169]
+2014/09/08 22:01:16.4982 | Settings loaded successfully
+2014/09/08 22:01:19.4803 | Logging in..
+2014/09/08 22:01:20.4334 | Login Successful -  SID: 2062520851
+2014/09/08 22:01:36.6593 | Requesting Data: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 22:01:49.3600 | Data Received: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 22:01:49.3660 | Importing Data: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 22:01:49.4610 | ERROR - Listing Agents: MSG=[Invalid column name 'AgentID'.
+Invalid column name 'Inserted'.] [System.Data.SqlClient.SqlException] [   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at HermesWebServiceClient.Main.ListAgents(DateTime startDate, DateTime endDate) in H:\personal\github\localRepo\HermesWebServiceClient\HermesWebServiceClient\Main.cs:line 163]
+2014/09/08 22:02:15.9456 | Settings loaded successfully
+2014/09/08 22:02:17.6517 | Logging in..
+2014/09/08 22:02:18.7087 | Login Successful -  SID: 2079353749
+2014/09/08 22:02:31.9205 | Requesting Data: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 22:02:43.5271 | Data Received: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 22:02:43.5351 | Importing Data: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 22:02:43.7041 | ERROR - Listing Agents: MSG=[Must declare the scalar variable "@AgentID".] [System.Data.SqlClient.SqlException] [   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at HermesWebServiceClient.Main.ListAgents(DateTime startDate, DateTime endDate) in H:\personal\github\localRepo\HermesWebServiceClient\HermesWebServiceClient\Main.cs:line 163]
+2014/09/08 22:03:31.2149 | Settings loaded successfully
+2014/09/08 22:03:34.0000 | Logging in..
+2014/09/08 22:03:34.9071 | Login Successful -  SID: 1362389325
+2014/09/08 22:03:47.7588 | Requesting Data: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 22:03:59.7325 | Data Received: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 22:03:59.7385 | Importing Data: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 22:03:59.8365 | ERROR - Listing Agents: MSG=[Invalid column name 'Inserted'.] [System.Data.SqlClient.SqlException] [   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at HermesWebServiceClient.Main.ListAgents(DateTime startDate, DateTime endDate) in H:\personal\github\localRepo\HermesWebServiceClient\HermesWebServiceClient\Main.cs:line 163]
+2014/09/08 22:04:30.3752 | Settings loaded successfully
+2014/09/08 22:04:33.1374 | Logging in..
+2014/09/08 22:04:34.0295 | Login Successful -  SID: 1400495022
+2014/09/08 22:04:46.0981 | Requesting Data: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 22:04:58.5099 | Data Received: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 22:04:58.5269 | Importing Data: StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 22:05:11.4666 | Data imported successfully StartDate:2014/09/05 00:00:00.0000 - EndDate:2014/09/06 00:00:00.0000
+2014/09/08 22:05:53.1160 | Requesting Data: StartDate:2014/09/06 00:00:00.0000 - EndDate:2014/09/07 00:00:00.0000
+2014/09/08 22:06:01.4965 | Data Received: StartDate:2014/09/06 00:00:00.0000 - EndDate:2014/09/07 00:00:00.0000
+2014/09/08 22:06:01.5035 | Importing Data: StartDate:2014/09/06 00:00:00.0000 - EndDate:2014/09/07 00:00:00.0000
+2014/09/08 22:06:10.4310 | Data imported successfully StartDate:2014/09/06 00:00:00.0000 - EndDate:2014/09/07 00:00:00.0000
+2014/09/08 22:06:50.0022 | Requesting Data: StartDate:2014/09/07 00:00:00.0000 - EndDate:2014/09/08 00:00:00.0000
+2014/09/08 22:06:57.9797 | Data Received: StartDate:2014/09/07 00:00:00.0000 - EndDate:2014/09/08 00:00:00.0000
+2014/09/08 22:06:57.9857 | Importing Data: StartDate:2014/09/07 00:00:00.0000 - EndDate:2014/09/08 00:00:00.0000
+2014/09/08 22:07:06.3162 | Data imported successfully StartDate:2014/09/07 00:00:00.0000 - EndDate:2014/09/08 00:00:00.0000
+2014/09/08 22:09:36.1987 | Timer initiated
+2014/09/08 22:09:50.0425 | Requesting Data: StartDate:2014/09/07 23:27:12.0000 - EndDate:2014/09/08 22:09:50.0415
+2014/09/08 22:10:01.6412 | Data Received: StartDate:2014/09/07 23:27:12.0000 - EndDate:2014/09/08 22:09:50.0415
+2014/09/08 22:10:01.6492 | Importing Data: StartDate:2014/09/07 23:27:12.0000 - EndDate:2014/09/08 22:09:50.0415
+2014/09/08 22:10:15.5000 | Data imported successfully StartDate:2014/09/07 23:27:12.0000 - EndDate:2014/09/08 22:09:50.0415
+2014/09/08 22:11:32.9004 | Timer initiated
+2014/09/08 22:11:46.4622 | Requesting Data: StartDate:2014/09/08 21:59:57.0000 - EndDate:2014/09/08 22:11:46.4612
+2014/09/08 22:11:46.9082 | Data Received: StartDate:2014/09/08 21:59:57.0000 - EndDate:2014/09/08 22:11:46.4612
+2014/09/08 22:11:46.9172 | Importing Data: StartDate:2014/09/08 21:59:57.0000 - EndDate:2014/09/08 22:11:46.4612
+2014/09/08 22:11:46.9262 | Data imported successfully StartDate:2014/09/08 21:59:57.0000 - EndDate:2014/09/08 22:11:46.4612
+2014/09/08 22:18:26.6921 | Settings loaded successfully
+2014/09/08 22:20:14.8033 | Settings loaded successfully
+2014/09/08 22:20:16.2943 | Logging in..
+2014/09/08 22:20:17.4104 | Login Successful -  SID: 735411013
+2014/09/08 22:20:58.5888 | Settings loaded successfully
+2014/09/08 22:20:59.9498 | Logging in..
+2014/09/08 22:21:01.1529 | Login Successful -  SID: 1428473204
+2014/09/08 22:21:04.1901 | End Date cannot be earlier than Start Date

@@ -25,7 +25,9 @@ namespace HermesWebServiceClient
 
             try
             {
+                AddLog("Application started: " + main.ReportVersionNumber());
                 main.LoadSettings();
+                this.Text += " " + main.ReportVersionNumber();
             }
             catch (Exception exc)
             {

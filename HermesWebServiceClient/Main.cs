@@ -8,6 +8,7 @@ using LogFileDLL;
 using HermesWebServiceClient.ServiceReference1;
 using System.Threading;
 using System.Data.SqlClient;
+using System.Reflection;
 
 namespace HermesWebServiceClient
 {
@@ -26,6 +27,11 @@ namespace HermesWebServiceClient
         {
             _lastSID = 0;
             _wsClient = new Hermes_ApiClient();
+        }
+
+        public string ReportVersionNumber()
+        {
+            return (Assembly.GetCallingAssembly().GetName().Version.ToString());
         }
 
         public void LoadSettings()
